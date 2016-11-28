@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		66D96ADF1DEC261800F6D14F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96ADE1DEC261800F6D14F /* main.m */; };
 		66D96AE21DEC261800F6D14F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96AE11DEC261800F6D14F /* AppDelegate.m */; };
-		66D96AE51DEC261800F6D14F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96AE41DEC261800F6D14F /* ViewController.m */; };
 		66D96AE81DEC261800F6D14F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D96AE61DEC261800F6D14F /* Main.storyboard */; };
 		66D96AEA1DEC261800F6D14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D96AE91DEC261800F6D14F /* Assets.xcassets */; };
 		66D96AED1DEC261800F6D14F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D96AEB1DEC261800F6D14F /* LaunchScreen.storyboard */; };
+		66D96AF81DEC275600F6D14F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96AF71DEC275600F6D14F /* ViewController.m */; };
+		66D96AFB1DEC278A00F6D14F /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D96AFA1DEC278A00F6D14F /* PolygonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		66D96ADE1DEC261800F6D14F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66D96AE01DEC261800F6D14F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66D96AE11DEC261800F6D14F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		66D96AE31DEC261800F6D14F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		66D96AE41DEC261800F6D14F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66D96AE71DEC261800F6D14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66D96AE91DEC261800F6D14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D96AEC1DEC261800F6D14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66D96AEE1DEC261800F6D14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D96AF61DEC275600F6D14F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66D96AF71DEC275600F6D14F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66D96AF91DEC278A00F6D14F /* PolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
+		66D96AFA1DEC278A00F6D14F /* PolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,8 @@
 			children = (
 				66D96AE01DEC261800F6D14F /* AppDelegate.h */,
 				66D96AE11DEC261800F6D14F /* AppDelegate.m */,
-				66D96AE31DEC261800F6D14F /* ViewController.h */,
-				66D96AE41DEC261800F6D14F /* ViewController.m */,
+				66D96AF41DEC275600F6D14F /* view */,
+				66D96AF51DEC275600F6D14F /* viewController */,
 				66D96AE61DEC261800F6D14F /* Main.storyboard */,
 				66D96AE91DEC261800F6D14F /* Assets.xcassets */,
 				66D96AEB1DEC261800F6D14F /* LaunchScreen.storyboard */,
@@ -77,6 +80,24 @@
 				66D96ADE1DEC261800F6D14F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66D96AF41DEC275600F6D14F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				66D96AF91DEC278A00F6D14F /* PolygonView.h */,
+				66D96AFA1DEC278A00F6D14F /* PolygonView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		66D96AF51DEC275600F6D14F /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				66D96AF61DEC275600F6D14F /* ViewController.h */,
+				66D96AF71DEC275600F6D14F /* ViewController.m */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D96AE51DEC261800F6D14F /* ViewController.m in Sources */,
 				66D96AE21DEC261800F6D14F /* AppDelegate.m in Sources */,
+				66D96AF81DEC275600F6D14F /* ViewController.m in Sources */,
 				66D96ADF1DEC261800F6D14F /* main.m in Sources */,
+				66D96AFB1DEC278A00F6D14F /* PolygonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +332,7 @@
 				66D96AF31DEC261800F6D14F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
