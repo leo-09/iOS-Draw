@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PolygonView.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    PolygonView *view = [[PolygonView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
